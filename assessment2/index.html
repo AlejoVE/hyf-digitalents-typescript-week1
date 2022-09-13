@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>HYF - Week 1</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div class="main-container" id="app">
+			<section class="section">
+				<h1 class="title">Caesar’s Cipher</h1>
+				<div class="img">
+					<img
+						src="https://www.confidencial.digital/wp-content/uploads/2022/05/julio-cesar.jpeg.webp"
+					/>
+				</div>
+				<form>
+					<label class="label" for="shift">Shift:</label>
+					<select class="label" name="shift" id="shift">
+						<option value="-">choose a shift</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</form>
+				<h2>Your Text</h2>
+				<textarea class="txtArea" id="plaintext"></textarea>
+				<h2>Decrypted</h2>
+				<textarea class="txtArea" readonly id="encryptedtext"></textarea>
+			</section>
+			<section class="section">
+				<h2>How does it work?</h2>
+				<p>
+					Caesar’s cipher uses an encryption algorithm where each letter is
+					replaced with a letter by some fixed number of positions down the
+					alphabetical series (e.g., a shift of 1 replaces the letter a
+					with b, the letter e with f, the word hello with ifmmp, etc.).
+				</p>
+				<ul>
+					<li>Encryption happens when the “shift” value is set.</li>
+					<li>
+						Encryption of the text is updated which each new character
+						typed by you given there is a value set for “shift”.
+					</li>
+				</ul>
+			</section>
+		</div>
+		<script async type="module" src="main.js"></script>
+	</body>
+</html>
