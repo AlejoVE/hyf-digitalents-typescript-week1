@@ -35,8 +35,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
 	font-weight: 900;
 	font-family: var(--secondaryFont);
 	margin: calc(var(--separation / 2)) 0;
@@ -51,10 +50,6 @@ h1 {
 h2 {
 	font-size: 2.6rem;
 	margin: 1rem 0;
-}
-
-h3 {
-	font-size: 2.8rem;
 }
 
 img {
@@ -94,4 +89,8 @@ img {
 	font-size: 1.7rem;
 	font-weight: 900;
 	color: var(--primary-color);
+}
+
+.text-left {
+	text-align: left;
 }
